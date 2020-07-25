@@ -1,8 +1,7 @@
-
 .homepage{
     height: 30vh;
         width: 90vw;
-        background-color: rgb(250, 25, 9);
+        background-color: #8909d9;
         margin: 6vh 5vw 0 4vw;
         display: flex;
         align-items: center;
@@ -11,15 +10,25 @@
         border-radius: 20px;
         color:floralwhite;
 }
-.flex-wrapper {
-    display: flex;
-    overflow-x: auto;
+.colourLight{
+    background-color: #743dcc;
+    border-radius: 6px;
 }
-.flex-wrapper::-webkit-scrollbar{
-    width:0;
+#buyItem, #buyShop{
+    border:0;
+    background-color: #f5edf7;
 }
-.flex-wrapper .item{
-    border: 1px solid black;
-    margin: 0 1px 0 0;
-    display: inline-block;
-}    
+.navbar-dark {
+    background-color: #9b13d1;
+}
+.button {
+    background-color:#ab78bf;
+}
+.footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 0 0px;
+}
+.listItem{
+    background-color:#ab78bf ;
+}

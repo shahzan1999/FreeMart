@@ -29,35 +29,34 @@ class Header extends Component {
 
     handleLogin(event) {
         this.toggleModal();
-        alert(this.username.value+this.password.value+this.remember.checked);
+        alert("You Are logged in : "+this.username.value);
         event.preventDefault();
     }
 
     render(){
         return(
             <React.Fragment> 
-
-                <Navbar dark color="primary" expand="md">
+                <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto ml-1" href="/">
-                            Buy It
+                            My Logo
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                                <NavItem className="ml-5">
+                                <NavItem className="">
                                     <NavLink className="nav-link" to="/home">
                                         <span className="fa fa-home fa-lg"> Home</span>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/sellpage">
-                                        <span className="fa fa-info fa-lg"> Sell Something</span>
+                                        <span className="fa fa-truck fa-lg"> Sell Something</span>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/buypage">
-                                        <span className="fa fa-address-card fa-lg"> Buy Something</span>
+                                        <span className="fa fa-shopping-cart fa-lg"> Buy Something</span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
